@@ -88,7 +88,7 @@ class   TicTacToe
       invalid=!valid_move?(@index)
     end
 
-    move(index)
+    move(@index)
   end
 
 end
