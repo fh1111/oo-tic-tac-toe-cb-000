@@ -86,9 +86,10 @@ class   TicTacToe
       input=gets
       indexp = input_to_index(input)
       invalid=!valid_move?(indexp)
+
     end
 
-    move(indexp)
+    move(indexp,current_player)
     display_board
 
 
