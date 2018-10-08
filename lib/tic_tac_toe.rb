@@ -134,7 +134,7 @@ class   TicTacToe
   def draw?
 
     if (full?)
-      if(won?==false)
+      if(won? == false)
         puts "Cat's Game!"
         return true
       else
