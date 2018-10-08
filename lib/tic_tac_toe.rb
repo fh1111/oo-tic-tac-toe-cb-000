@@ -79,13 +79,13 @@ class   TicTacToe
 
   def turn
 
-  invalid = true
+    invalid = true
 
     while invalid
       puts "Please enter 1-9:"
       input=gets
-      index=input_to_index(input)
-      invalid=!valid_move?(board,index)
+      input_to_index(input)
+      invalid=!valid_move?(@index)
     end
 
     move(index)
