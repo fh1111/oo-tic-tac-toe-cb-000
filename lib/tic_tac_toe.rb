@@ -58,6 +58,16 @@ class   TicTacToe
   end
 
 
+  def turn_count
+    counter=0
+    board.each do |element|
+      if (element=='X' || element=='O')
+        counter+=1
+      end
+    end
+    return counter
+  end
+
   def turn
 
   invalid = true
@@ -68,9 +78,8 @@ class   TicTacToe
       index=input_to_index(input)
       invalid=!valid_move?(board,index)
     end
-
+    
     move(index)
-
   end
 
 end
