@@ -121,4 +121,14 @@ class   TicTacToe
   end
 
 
+  def full?
+
+    full=@board.detect{|item| item==" "}
+    if (full==nil)
+      return true
+    else
+      return false
+    end
+  end
+
 end
