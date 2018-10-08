@@ -131,4 +131,21 @@ class   TicTacToe
     end
   end
 
+  def draw?
+
+    if (full?(@board))
+      if(won?(@board)==false)
+        puts "Cat's Game!"
+        return true
+      else
+        return false
+      end
+    else
+      return false
+    end
+  end
+
+
+
+
 end
