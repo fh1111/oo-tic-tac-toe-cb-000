@@ -44,9 +44,9 @@ class   TicTacToe
       return false
     end
   end
-    
+
   def valid_move?(index)
-    if (position_taken(index)==false)
+    if (!((@board[index] == "X") || (@board[index] == "O"))
       if(index >= 0 || index <9)
         return true
       else
