@@ -81,8 +81,11 @@ class   TicTacToe
 
     invalid=true
 
-    puts "Please enter 1-9:"
-    input=gets
+    while invalid
+      puts "Please enter 1-9:"
+      input=gets
+    end
+
 
 #    invalid = true
 
