@@ -58,5 +58,18 @@ class   TicTacToe
   end
 
 
+  def turn
+    puts "Select 1-9:"
+    txtinput = gets
+
+    index = input_to_index(txtinput)
+    if (valid_move(index))
+      move(index)
+      display_board
+    else
+      puts "Select 1-9:"
+    end
+
+  end
 
 end
