@@ -78,6 +78,9 @@ class   TicTacToe
   end
 
   def turn
+
+    invalid=true
+
     puts "Please enter 1-9:"
     input=gets
 
