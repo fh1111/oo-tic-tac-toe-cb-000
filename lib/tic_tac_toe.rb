@@ -167,18 +167,10 @@ class   TicTacToe
 
   def play
 
-    person="X"
-
     draw?
 
     while (!over?)
       turn
-      if(person=="X")
-        person="O"
-      else
-        person="X"
-      end
-
     end
 
   end
