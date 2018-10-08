@@ -88,6 +88,9 @@ class   TicTacToe
       invalid=!valid_move?(indexp)
     end
 
+    move(indexp)
+    display_board
+
 
 #    invalid = true
 
