@@ -92,17 +92,33 @@ class   TicTacToe
     move(indexp,current_player)
     display_board
 
-
-#    invalid = true
-
-#    while invalid
-#      puts "Please enter 1-9:"
-#      input=gets
-#      input_to_index(input)
-#      invalid=!valid_move?(@index)
-#    end
-
-#    move(@index)
   end
+
+
+  def won?
+
+    for win_combination in WIN_COMBINATIONS do
+
+      win_index_1 = win_combination[0]
+      win_index_2 = win_combination[1]
+      win_index_3 = win_combination[2]
+
+      position_1 = @board[win_index_1]
+      position_2 = @board[win_index_2]
+      position_3 = @board[win_index_3]
+
+      if ((position_1 == "X" && position_2 == "X" && position_3 == "X")||(position_1 == "O" && position_2 == "O" && position_3 == "O"))
+
+        puts "Congratulations #{@board[win_index_1]}!"
+        return win_combination
+
+      end
+
+    end
+
+    return false
+
+  end
+
 
 end
