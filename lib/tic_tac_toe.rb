@@ -84,6 +84,8 @@ class   TicTacToe
     while invalid
       puts "Please enter 1-9:"
       input=gets
+      indexp = input_to_index(input)
+      invalid=!valid_move?(indexp)
     end
 
 
